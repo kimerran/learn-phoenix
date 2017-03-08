@@ -10,6 +10,7 @@ defmodule Rumbl.User do
     timestamps()
   end
 
+
   def changeset(model, params \\ :empty) do
     model
     |> cast(params, ~w(name username), [])
